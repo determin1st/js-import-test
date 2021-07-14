@@ -1,5 +1,7 @@
 import * as lib from "./lib.module.js";
 
-console.log(lib);
-lib.func();
+(async function() {
+  const poop = await lib.default;
+  poop.func();
+})();
 

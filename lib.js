@@ -1,6 +1,12 @@
 var lib = (function() {
-  "use strict";
-  console.log('poop1');
-  debugger;
-  console.log('poop2');
+  var lib = (function() {
+    "use strict";
+    return {
+      func: (function() {
+        console.log('poop');
+      })
+    };
+  })();
+  ((function(){return !this;})()) && (window.$PHP$ = lib);
+  return lib;
 })();
