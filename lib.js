@@ -1,4 +1,4 @@
-var lib = (function() {
+var lib = (function(isStrict) {
   var lib = (function() {
     "use strict";
     return {
@@ -7,6 +7,6 @@ var lib = (function() {
       })
     };
   })();
-  ((function(){return !this;})()) && (window.$PHP$ = lib);
+  isStrict && (window.$PHP$ = lib);
   return lib;
-})();
+})(((function(){return !this;})()));
