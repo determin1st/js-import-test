@@ -1,5 +1,5 @@
 
-export var lib = (function() {
+export default (function() {
   return window.lib = {
     func: (function() {console.log('poop');})
   };
